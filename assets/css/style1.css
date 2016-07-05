@@ -124,7 +124,7 @@ h6  {
 
 .wrapper  {
   background-image: url(concrete_seamless1.png);
-  max-width: 960px;
+  width: 960px;
   /*background-repeat: repeat;
         background-position: 0 0;
         background-size: auto 100%;*/
@@ -137,20 +137,20 @@ h6  {
 
   .port-wrapper  {
   background-image: url(concrete_seamless1.png);
-  max-width: 960px;
+  width: 960px;
   /*background-repeat: repeat;
         background-position: 0 0;
         background-size: auto 100%;*/
   /*background-repeat: repeat;*/
   min-height: 100%;
   height: auto;
-  height: 105%;
+  height: 112%;
   margin: 0 auto -70px 0;
   }
 
   .form-wrapper {
     background-image: url(concrete_seamless1.png);
-    max-width: 960px;
+    width: 960px;
   /*background-repeat: repeat;
         background-position: 0 0;
         background-size: auto 100%;*/
@@ -323,25 +323,298 @@ textarea {
     border-color: #4aaaa5;
 }
 
-  footer  .push {
+  footer .push {
     height: 75px;
   }
 
   @media screen and (min-width: 769px) and (max-width: 980px) {
+    #header {
+    width: 980px;
+    height: 70px; 
+  }
+    #header ul {
+    width: 980px;
+    margin-left: 550px;
+    }
+    h1  {
+    margin-left: 120px; 
+    font-size: 24px; 
+    height: 70px;
+  }
+    .wrapper {
+      width: 980px;
+      height: 805px;
+    }
+    .port-wrapper {
+      width: 980px;
+      height: 1530px;
+    }
+    .form-wrapper {
+      width: 980px;
+      height: 760px;
+    }
+    h2  {
+      margin-left: 15px;
+    }
+    #main {
+    width: 395px; 
+    margin-left: 105px; 
+    }
+    .project-pics h4  {
+      width: 295px;
+    }
+    div p {
+      width: 350px;
+      clear: both;
+    }
+    #main-content {
+      width: 395px; 
+      margin-left: 15px;
+    }
+    #about-me {
+      width: 320px; 
+    }
+    #port-content {
+      width: 395px; 
+      margin-left: 15px; 
+      padding-left: 10px; 
+      height: 1300px;
+    }
+    .project-pics img {
+    width: 295px; 
+    height: auto;
+    }
+    form {
+      width: 355px; 
+    }
+    input[type=text] {
+      width: 355px;
+    }
+    textarea  {
+      height:216px;
+    }
+    #about-me img {
+      margin-left: 80px;
+    }
+    #sidebar {
+    width: 260px; 
+    margin-left: 19px;
+    }
+    #sidebar-box  {
+    width: 225px;
+    text-align: center;
+    }
+    footer  {
+      width: 980px; 
+    }
+}
+
+   @media screen and (min-width: 641px) and (max-width: 768px) {
+    #header {
+    width: 768px;
+    height: 69px;
+    }
+    #header ul{
+    margin-left: 545px;
+    }
+    h1  {
+    margin-left: 20px;
+    font-size: 24px;
+    height: 69px;
+    }
+    h1:hover  {
+      padding: 22px;
+    }
+    h3  {
+    margin-top: 20px;
+    margin-left: 0px;
+    }
+    .wrapper {
+      width: 768px;
+      height: 730px;
+    }
+    .port-wrapper {
+      width: 768px;
+      height: 1240px;
+    }
+    .form-wrapper {
+      width: 768px;
+      height: 930px;
+    }
+    #main {
+    width: 730px;
+    }
+    #main-content {
+      width: 730px;
+      margin-left: 20px;
+    }
+    .project-pics h4  {
+      width: 294px;
+    }
+    div p {
+      width: 700px;
+    }
+    #about-me {
+      width: 690px;
+    }
+    #port-content {
+      width: 730px;
+      margin-left: 20px;
+      height: 820px;
+    }
+    #port-content h3 {
+      margin-left: 20px;
+    }
+    .project-pics {
+      margin-left: 50px;
+      margin-right: 80px;
+    }
+    .project-pics img {
+    width: 294px;
+    height: auto;
+    }
+    form {
+      width: 690px;
+    }
+    input[type=text] {
+      width: 680px;
+    }
+    #sidebar {
+    width: 750px;
+    padding-left: 20px;
+    }
+    #sidebar-box  {
+    width: 730px;
+    text-align: left;
+    padding-left: 20px;
+    }
+    footer  {
+      width: 768px;
+    }
+}
+@media screen and (max-width: 640px) {
+    }
+    #header {
+    width: 640px;
+    height: 100px;
+    margin-top: 40px;
+    }
+    #header ul{
+    margin-top: 60px;
+    margin-left: 40px;
+    }
+    #header li {
+      padding-right: 54px;
+      padding-left: 54px;
+      font-size: 16px;
+    }
+     h1  {
+      width: 640px;
+      margin-left: 0;
+      text-align: center;
+    }
+    h1:hover  {
+      padding: 22px;
+    }
+    .wrapper {
+      width: 640px;
+      height: 1180px;
+    }
+    .port-wrapper {
+      width: 640px;
+      height: 2560px;
+    }
+    .form-wrapper {
+      width: 640px;
+      height: 980px;
+    }
+    h2  {
+      margin-left: 6px;
+    }
+    h3  {
+    margin-top: 11px;
+    margin-left: 7px;    
+    }
+    #main {
+    width: 590px;
+    margin-left: 10px;
+    }
+    .project-pics h4  {
+      width: 140%;
+    }
+    div p {
+      width: 560px;
+      clear: left;
+    }
+    #main-content {
+      width: 600px;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+   #about-me {
+      width: 555px;
+    }
+    #about-me img {
+      height: auto;
+      width: 385px;
+      margin-left: 85px;
+    }
+    #port-content {
+      width: 600px;
+      margin-top: 25px;
+      margin-left: 10px;
+      height: 2080px;
+    }
+    #port-content h3 {
+      margin-left: 20px;
+    }
+    .project-pics {
+      margin-left: 40px;
+      margin-right: 60px;
+    }
+    .project-pics img {
+    width: 515px;
+    height: auto;
+    }
+    .project-pics h4 {
+      width: 515px;
+    }
+    form {
+      width: 560px;
+    }
+    input[type=text] {
+      width: 550px;
+    }
+    #sidebar {
+    width: 620px;
+    padding-left: 20px;
+    }
+    #sidebar-box  {
+    width: 600px;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 40px;
+    }
+    footer  {
+      width: 640px;
+    }
+}
+
+ /*@media screen and (min-width: 769px) and (max-width: 980px) {
     .wrapper {
       width: 100%;
-      height: 12vh;
+      height: 125vh;
     }
     .port-wrapper {
       width: 100%;
-      height: 202vh;
+      height: 210vh;
     }
     .form-wrapper {
       width: 100%;
       height: 105vh;
     }
     #header {
-    width: 99.5%;
+    width: 100%;
     height: 10.5%;
     }
     #header ul {
@@ -361,13 +634,13 @@ textarea {
     h2  {
       margin-left: 1%;
     }
-    /*h3  {
-    margin-top: 2%;
-    margin-left: 1%;    
-    }*/
     #main {
     width: 45%;
     margin-left: 12%;
+    }
+    #main-content {
+      width: 100%;
+      margin-left: 3%;
     }
     .project-pics h4  {
       width: 140%;
@@ -378,20 +651,12 @@ textarea {
     #about-me {
       width: 90%;
     }
-    #main-content {
-      width: 100%;
-      margin-left: 3%;
-    }
     #port-content {
       width: 90%;
       margin-left: 2.5%;
       padding-left: 1%;
-      height: 207vh;
+      height: 180vh;
     }
-    /*.project-pics {
-      margin-left: 6.25%;
-      margin-right: 11%;
-      }*/
     .project-pics img {
     width: 140%;
     height: auto;
@@ -403,7 +668,7 @@ textarea {
       width: 100%;
     }
     textarea  {
-      height:30vh;
+      height: 30vh;
     }
     #about-me img {
       margin-left: 25%;
@@ -413,17 +678,14 @@ textarea {
     }
     #sidebar {
     width: 30%;
-   /* padding-left: 2.75%;*/
     margin-left: 2%;
     }
     #sidebar-box  {
     width: 100%;
     text-align: center;
-/*    padding-left: 3%;
-   padding-top: 4%;*/
     }
     footer  {
-      width: 99.5%;
+      width: 100%%;
     }
 }
 
@@ -446,7 +708,7 @@ textarea {
     }
     #header ul{
     width: 90%;
-    margin-left: 68%;
+    margin-left: 71%;
     }
     h1  {
     margin-left: 2.5%;
@@ -461,11 +723,15 @@ textarea {
       margin-left: 1%;
     }
     h3  {
-    margin-top: 2%;
-    margin-left: 1%;    
+    margin-top: 3%;
+    margin-left: 3%;    
     }
     #main {
-    width: 95%;
+      width: 95%;
+    }
+      #main-content {
+      width: 100%;
+      margin-left: 3%;
     }
     .project-pics h4  {
       width: 140%;
@@ -475,10 +741,6 @@ textarea {
     }
     #about-me {
       width: 90%;
-    }
-    #main-content {
-      width: 100%;
-      margin-left: 3%;
     }
     #port-content {
       width: 100%;
@@ -508,7 +770,6 @@ textarea {
     width: 100%;
     text-align: left;
     padding-left: 3%;
-    /*margin-top: 5%;*/
     }
     footer  {
       width: 100%;
@@ -535,45 +796,20 @@ textarea {
     margin-left: 0;
     }
     #header ul{
-    /*width: 100%;*/
-    margin-top: 6.5%;
-    margin-left: 5%;
+    margin-top: 10%;
+    margin-left: 6.25%;
     }
     #header li {
       padding-right: 9%;
       padding-left: 9%;
+      font-size: 16px;
     }
      h1  {
       width: 100%;
-      font-size: x-large;
       margin-left: 0;
       text-align: center;
     }
- /* #header li a {
-     /* padding: 10%;
-      margin-left: 35%;
-      margin-right: 35%;
-    }
-  /*#header li:nth-child(2) {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-    /*h1 {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;*/
-    /*font-size: 1.5em;
-    font-weight: bolder;
-    height: 10.5%;
-    }
-    /*h1  {
-      width: 100%;
-      font-size: x-large;
-      margin-left: 0;
-      text-align: center;
-    }*/
     h1:hover  {
-      /*padding: 3.1%;*/
       padding: 1%;
     }
     h2  {
@@ -585,6 +821,11 @@ textarea {
     }
     #main {
     width: 95%;
+    }
+    #main-content {
+      width: 100%;
+      margin-left: 3%;
+      margin-top: 4%;
     }
     .project-pics h4  {
       width: 140%;
@@ -600,11 +841,6 @@ textarea {
       height: auto;
       width: 70%;
       margin-left: 15%;
-    }
-    #main-content {
-      width: 100%;
-      margin-left: 3%;
-      margin-top: 4%;
     }
     #port-content {
       width: 100%;
@@ -638,9 +874,10 @@ textarea {
     width: 100%;
     text-align: left;
     padding-left: 3%;
-    margin-top: 5%;
+    margin-top: 6.5%;
     }
     footer  {
       width: 100%;
     }
 }
+*/
