@@ -1,0 +1,106 @@
+body  {
+  font-family: Arial, 'Marcellus', 'Georgia';
+  background-color: #eff2f5;
+}
+.navbar-inverse {
+  padding: 10px;
+  background-color: #00264d;
+}
+
+.navbar-inverse a.navbar-brand  {
+color: #ffffff;
+font-family: 'Marcellus SC','Marcellus',Arial, serif;
+font-size: 3em;
+}
+
+.navbar-inverse .navbar-brand:hover {
+color: #df4620;
+}
+
+nav>li>a {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1em;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #df4620;
+}
+
+#page-header {
+  font-size: 20px;
+  font-family: 'Marcellus SC','Marcellus',Arial, serif;
+  padding: 20px;
+}
+.page-header {
+  font-size: 40px;
+  font-family: 'Marcellus SC','Marcellus',Arial, serif;
+  padding-top: 10px;
+}
+
+h4  {
+  font-family: Arial, 'Georgia',Times,serif;
+}
+.col-md-8>p {
+ font-family:'Marcellus', 'Georgia', Arial, serif;
+ font-size: 14px;
+}
+
+#row  {
+  margin: 0px 50px 0px 50px;
+}
+
+.media-body>p {
+  padding-right: 30px;
+}
+
+.col-md-4 {
+  padding-top: 40px;
+}
+
+.col-md-6 {
+  padding-top: 40px;
+}
+.nav nav-tabs nav-justified {
+padding-top: 50px;
+}
+
+.btn-default:hover {
+  color: #df4620;
+}
+
+.btn-primary {
+  background-color: #00264d;
+}
+
+.text-primary {
+  color: #df4620;
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right  {
+  font-size: 20px;
+  opacity: .35;
+  color: #eff2f5;
+}
+
+.carousel-indicators  {
+  opacity: .35;
+  color: #eff2f5;
+  margin-bottom: -15px;
+}
+
+footer  {
+  margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #00264d;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #dddddd;
+    font-family: Arial,'Georgia',Times,serif;
+}
