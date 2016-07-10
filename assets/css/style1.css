@@ -4,18 +4,20 @@
 }
 
 body, html  {
-  margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url(../images/concrete_seamless.png);
+  /*margin: 0 auto -70px 0;*/
 }
-  /*background-image: url(concrete_seamless1.png);
-  width: 906px;*/
- /* body {
-    height: 100vh;
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -70px 0;
   }
-  html {
-    min-height: 100vh;
-  }*/
+ 
+}
 
 h1,
 h2,
@@ -70,17 +72,14 @@ h4  {
 h6  {
   margin-top: 20px;
   text-align: center;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: small;
 }
 
 #header {
   background-color: #ffffff;
-  width: 960px;
   height: 76px;
   margin-top: 0;
   padding: 2px;
-  float: left;
   border-bottom-style: solid;
   border-width: 2px;
   border-color: #cccccc;
@@ -92,7 +91,6 @@ h6  {
     margin-top: 25px;
     position: relative;
     background-color: #ffffff;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: small;
     color: #777777;
 }
@@ -122,52 +120,13 @@ h6  {
     padding: 15px;
 }
 
-.wrapper  {
-  background-image: url(concrete_seamless1.png);
-  width: 960px;
-  /*background-repeat: repeat;
-        background-position: 0 0;
-        background-size: auto 100%;*/
-  /*background-repeat: repeat;*/
-  min-height: 100%;
-  height: auto;
-  height: 100vh;
-  margin: 0 auto -70px 0;
-  }
-
-  .port-wrapper  {
-  background-image: url(concrete_seamless1.png);
-  width: 960px;
-  /*background-repeat: repeat;
-        background-position: 0 0;
-        background-size: auto 100%;*/
-  /*background-repeat: repeat;*/
-  min-height: 100%;
-  height: auto;
-  height: 115vh;
-  margin: 0 auto -70px 0;
-  }
-
-  .form-wrapper {
-    background-image: url(concrete_seamless1.png);
-    width: 960px;
-  /*background-repeat: repeat;
-        background-position: 0 0;
-        background-size: auto 100%;*/
-  /*background-repeat: repeat;*/
-    min-height: 100%;
-    height: auto;
-    height: 103vh;
-    margin: 0 auto -70px 0;
-  }
-
 #main {
   width: 650px;
   float: left;
+  padding-bottom: 30px;
 }
 
 div > p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     margin-top: 20px;
     line-height: 1.25;
@@ -176,7 +135,6 @@ div > p {
  form {
   width: 275px;
   margin-top: 20px;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #ababab;
   float: left;
   padding-left: 10px;
@@ -184,8 +142,6 @@ div > p {
 
 input[type=submit] {
   background-color: #4aaaa5;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
   padding-left: 20px;
@@ -307,191 +263,22 @@ textarea {
   }
 
   footer {
-    float: left;
     background-color: #666666;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     bottom:0;
-    width: 960px;
     height:70px;
     border-top-style: solid;
-    /*border-right-style: none;
-    border-bottom-style: none;
-    border-left-style: none;*/
-    /*margin-top: 4%;*/
     border-width: 5px;
     border-color: #4aaaa5;
-}
-
-  footer .push {
+    clear: both;
     height: 75px;
-  }
-
-  @media screen and (min-width: 769px) and (max-width: 980px) {
-    #header {
-    width: 980px;
-    height: 70px; 
-  }
-    #header ul {
-    width: 980px;
-    margin-left: 550px;
-    }
-    h1  {
-    margin-left: 120px; 
-    font-size: 24px; 
-    height: 70px;
-  }
-    .wrapper {
-      width: 980px;
-      height: 805px;
-    }
-    .port-wrapper {
-      width: 980px;
-      height: 1030px;
-    }
-    .form-wrapper {
-      width: 980px;
-      height: 760px;
-    }
-    h2  {
-      margin-left: 15px;
-    }
-    #main {
-    width: 395px; 
-    margin-left: 105px; 
-    }
-    .project-pics h4  {
-      width: 295px;
-    }
-    div p {
-      width: 350px;
-      clear: both;
-    }
-    #main-content {
-      width: 395px; 
-      margin-left: 15px;
-    }
-    #about-me {
-      width: 320px; 
-    }
-    #port-content {
-      width: 395px; 
-      margin-left: 15px; 
-      padding-left: 10px; 
-      height: 1300px;
-    }
-    .project-pics img {
-    width: 295px; 
-    height: auto;
-    }
-    form {
-      width: 355px; 
-    }
-    input[type=text] {
-      width: 355px;
-    }
-    textarea  {
-      height:216px;
-    }
-    #about-me img {
-      margin-left: 80px;
-    }
-    #sidebar {
-    width: 260px; 
-    margin-left: 19px;
-    }
-    #sidebar-box  {
-    width: 225px;
-    text-align: center;
-    }
-    footer  {
-      width: 980px; 
-    }
 }
 
-   @media screen and (min-width: 641px) and (max-width: 768px) {
-    #header {
-    width: 768px;
-    height: 69px;
-    }
-    #header ul{
-    margin-left: 545px;
-    }
-    h1  {
-    margin-left: 20px;
-    font-size: 24px;
-    height: 69px;
-    }
-    h1:hover  {
-      padding: 22px;
-    }
-    h3  {
-    margin-top: 20px;
-    margin-left: 0px;
-    }
-    .wrapper {
-      width: 768px;
-      height: 730px;
-    }
-    .port-wrapper {
-      width: 768px;
-      height: 1240px;
-    }
-    .form-wrapper {
-      width: 768px;
-      height: 930px;
-    }
-    #main {
-    width: 730px;
-    }
-    #main-content {
-      width: 730px;
-      margin-left: 20px;
-    }
-    .project-pics h4  {
-      width: 294px;
-    }
-    div p {
-      width: 700px;
-    }
-    #about-me {
-      width: 690px;
-    }
-    #port-content {
-      width: 730px;
-      margin-left: 20px;
-      height: 820px;
-    }
-    #port-content h3 {
-      margin-left: 20px;
-    }
-    .project-pics {
-      margin-left: 50px;
-      margin-right: 80px;
-    }
-    .project-pics img {
-    width: 294px;
-    height: auto;
-    }
-    form {
-      width: 690px;
-    }
-    input[type=text] {
-      width: 680px;
-    }
-    #sidebar {
-    width: 750px;
-    padding-left: 20px;
-    }
-    #sidebar-box  {
-    width: 730px;
-    text-align: left;
-    padding-left: 20px;
-    }
-    footer  {
-      width: 768px;
-    }
-}
+ footer .push {
+    height: 75px;
+    clear: both;
+  }
+  
   @media screen and (max-width: 640px) {
     #header {
       width: 640px;
@@ -521,18 +308,6 @@ textarea {
     h3  {
       margin-top: 11px;
       margin-left: 7px;    
-    }
-    .wrapper {
-      width: 640px;
-      height: 1180px;
-    }
-    .port-wrapper {
-      width: 640px;
-      height: 2560px;
-    }
-    .form-wrapper {
-      width: 640px;
-      height: 980px;
     }
     #main {
       width: 590px;
@@ -584,6 +359,7 @@ textarea {
     #sidebar {
     width: 620px;
     padding-left: 20px;
+    padding-bottom: 20px;
     }
     #sidebar-box  {
     width: 600px;
@@ -591,288 +367,142 @@ textarea {
     padding-left: 15px;
     margin-top: 40px;
     }
-    footer  {
-      width: 640px;
-    }
 }
-
- /*@media screen and (min-width: 769px) and (max-width: 980px) {
-    .wrapper {
-      width: 100%;
-      height: 125vh;
-    }
-    .port-wrapper {
-      width: 100%;
-      height: 210vh;
-    }
-    .form-wrapper {
-      width: 100%;
-      height: 105vh;
-    }
+ @media screen and (min-width: 641px) and (max-width: 768px) {
     #header {
-    width: 100%;
-    height: 10.5%;
+    width: 768px;
+    height: 69px;
     }
-    #header ul {
-    width: 100%;
-    margin-left: 63%;
-    font-weight: 300;
+    #header ul{
+    margin-left: 545px;
     }
     h1  {
-    margin-left: 13%;
-    font-size: 1.5em;
-    font-weight: bolder;
-    height: 10.5%;
+    margin-left: 20px;
+    font-size: 24px;
+    height: 69px;
     }
     h1:hover  {
-      padding: 2.1%;
+      padding: 22px;
     }
-    h2  {
-      margin-left: 1%;
+    h3  {
+    margin-top: 20px;
+    margin-left: 0px;
     }
     #main {
-    width: 45%;
-    margin-left: 12%;
+    width: 730px;
+    padding-bottom: 20px;
     }
     #main-content {
-      width: 100%;
-      margin-left: 3%;
+      width: 730px;
+      margin-left: 20px;
     }
     .project-pics h4  {
-      width: 140%;
+      width: 294px;
     }
     div p {
-      width: 111%;
+      width: 700px;
     }
     #about-me {
-      width: 90%;
+      width: 690px;
     }
     #port-content {
-      width: 90%;
-      margin-left: 2.5%;
-      padding-left: 1%;
-      height: 180vh;
+      width: 730px;
+      margin-left: 20px;
+      height: 820px;
+    }
+    #port-content h3 {
+      margin-left: 20px;
+    }
+    .project-pics {
+      margin-left: 50px;
+      margin-right: 80px;
     }
     .project-pics img {
-    width: 140%;
+    width: 294px;
     height: auto;
     }
     form {
-      width: 100%;
+      width: 690px;
     }
     input[type=text] {
-      width: 100%;
+      width: 680px;
     }
-    textarea  {
-      height: 30vh;
+    #sidebar {
+    width: 750px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     }
-    #about-me img {
-      margin-left: 25%;
+    #sidebar-box  {
+    width: 730px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    }
+}
+
+ @media screen and (min-width: 769px) and (max-width: 980px) {
+    #header {
+    width: 980px;
+    height: 70px; 
+  }
+    #header ul {
+    width: 980px;
+    margin-left: 550px;
+    }
+    h1  {
+    margin-left: 120px; 
+    font-size: 24px; 
+    height: 70px;
+  }
+    h2  {
+      margin-left: 15px;
+    }
+    #main {
+    width: 395px; 
+    margin-left: 105px; 
+    padding-bottom: 20px;
+    }
+    .project-pics h4  {
+      width: 295px;
     }
     div p {
+      width: 350px;
       clear: both;
     }
-    #sidebar {
-    width: 30%;
-    margin-left: 2%;
-    }
-    #sidebar-box  {
-    width: 100%;
-    text-align: center;
-    }
-    footer  {
-      width: 100%%;
-    }
-}
-
-   @media screen and (min-width: 641px) and (max-width: 768px) {
-    .wrapper {
-      width: 100%;
-      height: 114vh;
-    }
-    .port-wrapper {
-      width: 100%;
-      height: 160vh;
-    }
-    .form-wrapper {
-      width: 100%;
-      height: 125vh;
-    }
-    #header {
-    width: 100%;
-    height: 10.5%;
-    }
-    #header ul{
-    width: 90%;
-    margin-left: 71%;
-    }
-    h1  {
-    margin-left: 2.5%;
-    font-size: 1.5em;
-    font-weight: bolder;
-    height: 10.5%;
-    }
-    h1:hover  {
-      padding: 3.1%;
-    }
-    h2  {
-      margin-left: 1%;
-    }
-    h3  {
-    margin-top: 3%;
-    margin-left: 3%;    
-    }
-    #main {
-      width: 95%;
-    }
-      #main-content {
-      width: 100%;
-      margin-left: 3%;
-    }
-    .project-pics h4  {
-      width: 140%;
-    }
-    div p {
-      width: 111%;
+    #main-content {
+      width: 395px; 
+      margin-left: 15px;
     }
     #about-me {
-      width: 90%;
+      width: 320px; 
     }
     #port-content {
-      width: 100%;
-      margin-left: 3%;
-      height: 112vh;
-    }
-    .project-pics {
-      margin-left: 6.25%;
-      margin-right: 11%;
+      width: 395px; 
+      margin-left: 15px; 
+      padding-left: 10px; 
+      height: 1300px;
     }
     .project-pics img {
-    width: 140%;
+    width: 295px; 
     height: auto;
     }
     form {
-      width: 100%;
+      width: 355px; 
     }
     input[type=text] {
-      width: 100%;
+      width: 355px;
     }
-    #sidebar {
-    width: 98%;
-    padding-left: 2.75%;
-    margin-bottom: 4%;
-    }
-    #sidebar-box  {
-    width: 100%;
-    text-align: left;
-    padding-left: 3%;
-    }
-    footer  {
-      width: 100%;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    #header {
-    width: 100%;
-    height: 10.5%;
-    margin-top: 8%;
-    margin-left: 0;
-    }
-    #header ul{
-    margin-top: 10%;
-    margin-left: 6.25%;
-    }
-    #header li {
-      padding-right: 9%;
-      padding-left: 9%;
-      font-size: 16px;
-    }
-     h1  {
-      width: 100%;
-      margin-left: 0;
-      text-align: center;
-    }
-    h1:hover  {
-      padding: 1%;
-    }
-    h2  {
-      margin-left: 1%;
-    }
-    h3  {
-    margin-top: 2%;
-    margin-left: 1%;    
-    }
-    .wrapper {
-      width: 100%;
-      height: 165vh;
-    }
-    .port-wrapper {
-      width: 100%;
-      height: 346vh;
-    }
-    .form-wrapper {
-      width: 100%;
-      height: 136vh;
-    }
-    #main {
-    width: 95%;
-    }
-    #main-content {
-      width: 100%;
-      margin-left: 3%;
-      margin-top: 4%;
-    }
-    .project-pics h4  {
-      width: 140%;
-    }
-    div p {
-      width: 100%;
-      clear: left;
-    }
-    #about-me {
-      width: 100%;
+    textarea  {
+      height:216px;
     }
     #about-me img {
-      height: auto;
-      width: 70%;
-      margin-left: 15%;
-    }
-    #port-content {
-      width: 100%;
-      margin-top: 4%;
-      margin-left: 3%;
-      height: 285vh;
-    }
-    .project-pics {
-      margin-left: 6.25%;
-      margin-right: 11%;
-    }
-    .project-pics img {
-    width: 245%;
-    height: auto;
-    }
-    .project-pics h4 {
-      width: 245%;
-    }
-    form {
-      width: 100%;
-    }
-    input[type=text] {
-      width: 100%;
+      margin-left: 80px;
     }
     #sidebar {
-    width: 96%;
-    padding-left: 1.25%;
-    margin-bottom: 4%;
+    width: 260px; 
+    margin-left: 19px;
     }
     #sidebar-box  {
-    width: 100%;
-    text-align: left;
-    padding-left: 3%;
-    margin-top: 6.5%;
+    width: 225px;
+    text-align: center;
     }
-    footer  {
-      width: 100%;
-    }
-}*/
