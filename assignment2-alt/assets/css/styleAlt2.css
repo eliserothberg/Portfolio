@@ -41,15 +41,25 @@ body, html  {
   margin-bottom: 0px;
   margin-right: 50px;
   background-color: #4aaaa5;
-  /*position: absolute;
-  background-color: #4aaaa5;*/
+  animation: pulse 5s infinite;
+  /*position: absolute;*/
 }
-a..navbar-brand {
+
+@keyframes pulse {
+  0% {
+    background-color: #4aaaa5;
+  }
+  100% {
+    background-color: #a54aaa;
+  }
+}
+a>navbar-brand {
   margin-left: 35px;
 }
 .navbar-default {
   min-height: 70px;
   padding-right: 15px;
+  background-color: #2b3e50;
 }
 .navbar-right {
   margin-top: 10px;
@@ -80,6 +90,10 @@ li:nth-child(3) {
   /*padding-right: 30px
   margin-right: 20px;
   padding-left: 20px;*/
+} 
+
+.panel-body>a>img {
+  /*animation: pulse 5s infinite;*/
 }
 .col-sm-3 {
   background-color: #ffffff;
@@ -98,10 +112,12 @@ li:nth-child(3) {
 
 .panel-default  {
   margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .panel-body {
   padding: 10px 0px 15px 55px;
+  background-color: #ffffff;
 }
 
 .panel-heading>h3 {
@@ -179,6 +195,10 @@ button.btn.btn-primary  {
   border-radius: 1px;
   border-color: #777777;
 }
+
+ .form-control  {
+  border: 1px solid #777777
+ }
 /*.col-sm-4>h4  {
   margin-top: -60px;
   margin-left: 40px;
@@ -245,6 +265,38 @@ footer.sticky {
     text-align: center;
 }
 
+.card-container {
+  cursor: pointer;
+  height: 100px;
+  perspective: 600;
+  position: relative;
+  width: 240px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 100px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
 /*@media (min-width: 768px) {
   .navbar-header {
     margin-left: 80px;
